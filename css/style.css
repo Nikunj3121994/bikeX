@@ -1,0 +1,793 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300|Roboto+Slab:400,100,300,700);
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+@import url(https://fonts.googleapis.com/css?family=Teko:400,500);
+
+body {
+
+font-family: "Roboto Slab" ;
+font-weight: 300;
+font-size: 2em;
+position: relative;
+letter-spacing: 1px;
+}
+
+ h2, h3, h4, h5, h6 {
+
+font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+font-weight: bold;
+margin-top: 15px;
+
+}
+/*.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}*/
+
+.container {
+  overflow: hidden;
+}
+
+/*img {
+	max-width: 200px;
+}*/
+
+
+
+.navbar{
+
+  border-radius: 0;
+  border: 0;
+}
+
+/**  Header Navigation **/
+
+
+  nav .container {
+        padding-left: 25;
+    }
+
+
+ .navbar {
+  padding: 20px 0;
+  margin-bottom: 50px;
+  transition: all .5s ease-out;
+  }
+
+/*.top-nav-collapse {
+        padding: 0;
+    }*/
+
+a.page-scroll
+{
+
+background-color: transparent;
+
+
+}    
+
+/*.navbar-nav li a {
+ line-height: 60px;
+}*/
+
+/*@media(min-width:767px) {
+    header .navbar {
+        
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}*/
+
+
+header .navbar-default {
+  background-color: rgba(0, 0, 0, .7);
+  border: none;
+  }
+
+ @media screen and (max-width:767px){
+  header .navbar-default {
+    padding-bottom: 1.5px;
+  }
+} 
+
+header .navbar-default .navbar-nav a {
+  color: white;
+  padding: 5px 15px;
+}
+
+/*To create a space between navbar brand and navbar anchor tag elements*/
+@media screen and (max-width: 991px){
+  .navbar-default .navbar-nav a {
+    margin-left: -15px ;
+  }
+}
+
+ 
+header .navbar-default .navbar-nav a:hover {
+  color: #ffffff;
+}
+
+header .navbar-default .navbar-nav .active a.page-scroll {
+  font-weight: 700;
+  color: #cccccc;
+  background: transparent;
+  border-bottom: 4px solid #cccccc;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a.page-scroll:hover {
+  color: #cccccc;
+  background: transparent;
+  text-shadow: none;
+}
+
+
+/**  Navbar Brand **/
+
+.navbar-brand {
+  float: left;
+   height: 0; 
+   padding: 0 ; 
+  line-height: 20px;
+}
+
+
+header .navbar-brand h1 {
+color: white;
+margin:0;
+font-weight: bold;
+font-size: 1.6em;
+/*padding-left: 105px;*/
+padding-bottom: 25px;
+
+}
+
+header .navbar-brand span.subhead {
+color: white;
+/*display: block;*/
+font-family: "Roboto Slab";
+font-size: .6em;
+font-weight: 100;
+
+}
+
+/**  Navbar Toggle **/
+
+header .navbar-toggle {
+  background-color: #cccccc;
+}
+
+
+header .navbar-default .navbar-toggle .icon-bar{
+
+	background-color: white;
+}
+
+
+
+/*-----------Main Image--------*/
+
+.jumbotron {
+    background-image: url("../images/cycleHandle.jpg");
+    /*height: 600px;*/
+    background-repeat:no-repeat center center;
+    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding: 0px;
+    margin-top: 70px;
+}
+.jumbotron .bg-overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+/*.jumbotron .bg-overlay img {
+  width: 100%;
+  height: 100%;
+}*/
+.jumbotron .container {
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.jumbotron h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Shift', sans-serif;
+}
+.jumbotron .jumbotronText {
+    color: #fff;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    
+}
+/* Bike X logo */
+.jumbotron img {
+    margin-top: 60px;
+    /*height: auto;*/
+    width: 40%;
+}
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 451px) {
+  .jumbotron img  { 
+margin-top: 20px
+}
+}
+
+@media only screen 
+and (min-width: 250px) 
+and (max-width: 450px) {
+  #countDownTimer .countdown-row{
+  display: block;
+}
+}
+
+
+/* CountDown Timer  */
+
+ #countDownTimer .countdown-row{
+  display: block;
+  text-align: center;
+}
+
+ #countDownTimer  .countdown-section{
+  display: inline-block;
+  width: 135px;
+}
+
+#countDownTimer  .countdown-amount {
+  display: block;
+  color: #ffffff;
+  font-size: 2.6em;
+  line-height: 55px;
+}
+
+#countDownTimer  .countdown-period {
+  display: block;
+  color: #ffffff;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*Making countdown responsive*/
+
+@media screen and (max-width: 525px)
+{
+
+  #countDownTimer .countdown-section{
+    width: 68px;
+    font-size: 14px;
+  }
+
+
+
+}
+
+
+/*page*/
+
+.page{
+
+	padding: 70px 0;
+}
+
+.page h2 {
+
+text-align: center;
+margin-bottom: 30px;
+
+}
+
+
+/*    page--mission   */
+
+#mission {
+padding-top: 60px;
+}
+
+#mission .first-para {
+text-align: center;
+}
+
+#mission .media-body{
+
+  text-align: justify;
+}
+
+
+.smedia-history {
+
+padding-top: 30px;
+
+}
+
+.media-object-history{
+  -moz-width:100%;
+  width: 100%;
+  
+
+}
+/*-----------Carousel OverView--------*/
+
+
+.carousel-inner  {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  
+  /*margin-top: 74px;*/
+}
+
+
+.carousel-inner .item img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height:350px;
+  max-height: 350px;
+}
+
+
+
+
+/*  page--services  */
+
+.service{
+    margin: 20px 0;
+    text-align: justify;
+
+}
+
+#services{
+
+  padding-top: 70px;
+  margin: 0;
+}
+#services .first-para {
+text-align: center;
+padding-top: 0px;
+}
+
+#services .media-heading {
+  padding-top: 40px;
+}
+
+
+#media-object-design {
+  width: 100%;
+  padding-top: 20px;
+}
+#services .media-heading {
+
+}
+
+/*#services img.icon {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}*/
+
+#services h3 h2{
+margin-bottom: 10px;
+text-align: center;
+}
+
+
+@media only screen 
+and (min-width: 400px) 
+and (max-width: 768px) {
+  .service p  { 
+padding: 0 20%;
+}
+}
+
+/*-----bikeFold--------*/
+
+#bikeFold .first-para {
+text-align: center;
+}
+
+/*-----otherFeatures--------*/
+
+#otherFeatures img.feature-image{
+  width: 12em;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+}
+
+
+/*-----Customize The bike------*/
+
+/*-----Start of Customize The bike options arrow------*/
+
+
+/*-----End of Customize options------*/
+.media-object-customize{
+  -moz-width:80%;
+  width: 80%; 
+}
+
+.formInputs{
+  display: inline-block;
+  width: 100%;
+  margin-left: 12%;
+  margin-bottom: 50px;
+}
+
+.customizeOptions {
+  width: 37%;
+  height: 50px;
+  display:inline-block;
+  padding: 20px 5px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.customizeOptions label {
+  padding-right: 12px;
+}
+
+.customizeOptions option {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.customizeOptions p {
+  margin-top: 10px;
+}
+
+.customizeButtonGroup{
+  
+  margin-top: 30px;
+
+}
+
+.totalPriceButton{
+
+  width: 98.5%;
+  display: block;
+  font-size: 1em;
+
+}
+
+.customizeButton2{
+  display: inline-block;
+  width:100%;
+}
+
+.buyButtons{
+  width: 48.71%;
+  font-size:.7em;
+  margin-top: 5px;
+}
+
+
+
+/*-----Buy Additional Products--------*/
+.additionalProductsRow2{
+
+  height: 390px;
+  margin-top: 50px;
+}
+
+
+
+#additionalProducts img.additionalProducts-image{
+  width: 12em;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+}
+
+.status{
+  position: absolute;
+  top: 0;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  /*-webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  -0-transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-in;*/
+}
+
+ .status h3 {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 2px 5px;
+  background-color: rgb(168,88,163);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  width: 70%;
+}
+
+.status:hover{
+  opacity: 0.9;
+
+}
+
+.status h3:hover{
+
+  background-color: rgba(133,88,168,0.7);
+}
+
+
+#additionalProducts .additionalProducts-text{
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Roboto Slab" ;
+  font-weight: 300;
+  font-size: 1.6em;
+
+}
+
+#additionalProducts .additionalProducts-paragraph{
+  color: rgb(242,74,74);
+
+}
+
+/*Product colors Circles*/
+
+.circle-blue{ /*dodger blue*/
+        /*position: relative;*/
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        background: #1E90FF;
+        display: inline-block;
+        margin-right: 2%;
+        margin-left: 27%;
+        margin-top: 250px;
+        -webkit-animation-delay: 0.05s; /* Chrome, Safari, Opera */
+        animation-delay: 0.05s;
+        /*-webkit-transition: opacity 0.5s ease-in;
+        -moz-transition: opacity 0.5s ease-in;
+        -0-transition: opacity 0.5s ease-in;
+        transition: opacity 0.5s ease-in;
+*/      
+    }
+
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 767px) {
+  .circle-blue { 
+ margin-left:30%;
+}
+}   
+
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 991px) {
+  .circle-blue { 
+ margin-left:32%;
+}
+} 
+
+.circle-red{   /*dark gold*/
+  
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        background: #FF0450;
+        display: inline-block;
+        margin-right: 2%;
+        -webkit-animation-delay: 0.10s; /* Chrome, Safari, Opera */
+        animation-delay: 0.10s;        
+    }  
+
+ .circle-gold{   /*dark gold*/
+  
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        background: #FFD700;
+        display: inline-block;
+        margin-right: 2%;
+        -webkit-animation-delay: 0.15s; /* Chrome, Safari, Opera */
+        animation-delay: 0.15s;
+        
+    }     
+
+
+.circle-lightOrange{   /*light orange*/
+  
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        background: #FFA500;
+        display: inline-block;
+        margin-right: 2%;
+        -webkit-animation-delay: 0.20s; /* Chrome, Safari, Opera */
+        animation-delay: 0.20s;
+        
+    }    
+
+ .circle-grey{   /*slate grey*/
+  
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        background: #C0C0C0;
+        display: inline-block;
+        margin-right: 2%;
+        -webkit-animation-delay: 0.25s; /* Chrome, Safari, Opera */
+        animation-delay: 0.25s; 
+    }  
+
+
+
+
+
+
+
+/*  Footer Navigation  */
+
+.footer{
+  background-color: rgba(88,88,88,.05);
+  font-family: "Roboto";
+  height: 100%;
+  /*margin-bottom: 45px;*/
+/*  padding-bottom: 200px;*/
+  padding-top: 100px;
+  /*padding-top: px;*/
+  
+}
+
+.contactInfo {
+  font-size: 1em;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+
+.contactInfo p {
+  margin-top: 30px;
+}
+
+.subscribe {
+  margin-top: 40px;
+}
+
+ .btn-primary{
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  border-radius: 0 !important;
+  border-color: #404040;
+  transition: background-color 0.4s ease;
+}
+
+.btn-primary:hover {
+
+  background: rgba(255,0,0,0.7);
+  border-color:   rgba(255,0,0,0.7);
+}
+ 
+.form-control:focus {
+  border-radius: 0;
+  border-color: #000000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.socialIcons {
+  width: 80%;
+  margin-top: 40px;
+  color: #404040;
+}
+
+.contactInfo2 {
+  font-size: 1em;
+  padding-left: 60px;
+  list-style: none;
+  border-left: thin solid #808080;
+}
+
+/*media review*/
+
+.reviewImage {
+  width:110px; height:125px; margin-top:20px;
+}
+blockquote {
+  margin-top:25px; padding-left:10px;
+}
+
+
+/*howToBuy*/
+
+.howToBuy {
+margin-top:20px;
+padding-top: 20px;
+border-top: thin solid #808080; 
+}
+
+.howToBuy h3 {
+  padding-bottom: 20px;
+}
+
+.list-unstyled a li {
+  font-size: 0.9em;
+  color: rgba(0,0,0,0.75);
+  padding: 5px 0 5px 0;
+}
+
+.list-unstyled a:hover {
+  text-decoration: none !important;
+}
+
+.list-unstyled a li:hover {
+  color: rgba(255,0,0,0.7); 
+
+}
+
+
+footer  {
+
+  background-color: #006666;
+  color: white;
+  font-size: .8em;
+  padding: 20px 0 0 40px;
+}
+
+footer a{
+  color: #E0E6AE;
+}
+
+footer a:hover {
+
+color: #EEC856 !important;
+
+}
+
+footer .phone {
+
+font-size: 1.4em;
+font-weight: 700;
+color: #E0E6AE;
+
+}
+
+footer .navbar-default {
+
+background-color: transparent;
+margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+padding-top: 0;
+padding-bottom: 0;
+text-decoration: underline;
+color: #EEC856 !important;
+
+
+}

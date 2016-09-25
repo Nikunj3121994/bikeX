@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="customizeBike">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bike-X</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.4/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="animateCss/animateCss.css">
+  
+  <script src="js/prefixfree.min.js"></script>
+  <!-- Custom CSS -->
+    <!-- <link href="css/scrolling-nav.css" rel="stylesheet"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+    <div class="container">
+     <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand  page-scroll " href="#featured"><h1>Bikes Ltd <span class="subhead">Bikes for you</span></h1></a>
+      
+      </div> <!-- navbar-header -->
+      <div class="row">
+      <div class="collapse navbar-collapse col-md-offset-3" id="collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a class="page-scroll" href="#featured">Home</a></li>
+              <li><a class="page-scroll" href="#mission">Brief History</a></li>
+              <li><a class="page-scroll" href="#services">OverView</a></li>
+              <li><a class="page-scroll" href="#customizeBike">Customize</a></li>
+              <li><a class="page-scroll" href="#footer">Contact Us</a></li>
+            </ul>
+        </div>  <!-- collapse navbar-collapse -->
+        </div>
+
+      </div>   <!-- container -->
+
+  </nav>
+
+  <div class= "jumbotron" id="featured" id="bigtext">
+    <div class="bg-overlay">
+      <!-- <img src="images/cycleHandle.jpg"> -->
+      <div class= "container">
+        <h1 class = "jumboh1">BIKES Ltd</h1>
+          <p class = "jumbotronText ">
+          The endless driving experience begins in...
+        </p>
+        <p id = "countDownTimer" class ="countDown "></p>
+        <img class = "bikeXLogo" src="images/bikelog.svg"/>
+      </div>  <!-- class= "container" -->
+    </div>
+  </div>
+ 
+</header>
+
+<body data-spy="scroll" data-target="#collapse">
+<div class="main">
+  <div class="page" id="mission">
+    <div class="content container ">
+      <div class="animatedParent">
+      <h2 class="animated growIn">Welcome to the Bikes Ltd</h2>
+      </div>
+      <hr>
+        <div class="row">
+          <div class="animatedParent animateOnce">
+          <p class= "first-para animated fadeInUpShort ">We’re a specialist cycling store based in Happy Town, providing quality bikes, friendly service and helpful advice. We’re really passionate about all things bike and we want to pass on our love of cycling to you.</p>
+          </div>
+          <div class="media" id="media-history">
+            <div class="col-lg-6">
+            <div class="media-left">
+              
+                <!-- <img class="media-object" id="media-object-history" src="images/cycling.jpg" alt="..."> -->
+
+                <div id="media-object-history" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#media-object-history" data-slide-to="0" class="active"></li>
+                    <li data-target="#media-object-history" data-slide-to="1"></li>
+                    <li data-target="#media-object-history" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="images/cycling.jpg" alt="...">
+                    </div>
+
+                    <div class="item">
+                      <img src="images/velo1.jpg" alt="...">
+                    </div>
+
+                    <div class="item">
+                      <img src="images/bike1.jpg" alt="...">
+                    </div>
+
+                    </div>  
+                </div> 
+              
+            </div>
+          </div> <!-- class="col-lg-6" -->
+          <div class="col-lg-6">
+            <div class="media-body">
+
+              <h2 class="media-heading">Our Journey</h2>
+              <p>Bikes Ltd is an innovative bicycle manufacturer, founded in 2012. Over the years we have been developing successful products.</p>
+              <p>You have been able to stand tall wether its professional cycling arena or day to day routine. Bikes Limited state of the art design solutions are crafted keeping in mind your satisfaction and ease of use</p>
+              <div class="btn btn-primary btn-lg">Explore</a></div>
+            </div>
+          </div> <!-- class="col-lg-6" -->
+          </div> <!-- class="media" -->
+
+      </div> <!-- row -->
+    </div> <!-- content container -->
+  </div><!-- mission page -->
+
+  <div class="page" id="services">
+    <div class="content container">
+      <h2>OverView</h2>
+      <hr>
+      <!-- Design Container -->
+      <div class="row">
+        <p class= "first-para">We’re a specialist cycling store based in Happy Town, providing quality bikes, friendly service and helpful advice. We’re really passionate about all things bike and we want to pass on our love of cycling to you.</p>
+
+        <div class="media" id="media-design">
+            
+          <div class="col-lg-3 col-sm-offset-1">
+            <div class="media-body">
+              <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+                <h2 class="media-heading animated fadeInLeftShort slow data-id='1'">Design</h2>
+
+                <p class="first-para animated fadeInLeftShort data-id='2'">We’ve designed a brand new bike concept without any unnecessary clutter taking the spotlight away from the beautiful, minimalistic design. It'll pop on the streets and reflect your stylish personality.</p>
+              </div> <!-- class="animatedParent" -->  
+            </div>
+          </div> <!-- class="col-lg-3" -->
+
+          <div class="col-lg-7 ">
+            <div class="media-right">
+              <div class="animatedParent data-sequence='5000' data-appear-top-offset='-600'">
+                <img class="media-object animated fadeInRightShort slow" id="media-object-design" src="images/bikeDesign3.jpg" alt="...">  
+               </div> 
+            </div>
+          </div> <!-- class="col-lg-7" -->
+          </div> <!-- class="media" -->
+
+      </div> <!-- row --> 
+    </div> <!-- services container -->
+    </div><!-- services page -->
+
+      <!-- Folding Bike container -->
+      <div class="page" id="bikeFold">
+        <div class="content container">
+          <h2>Folding Bike</h2>
+      <hr>  
+      <div class="row">
+        <div class="media" id="media-design">
+
+          <div class="col-lg-7 media-fold ">
+            <div class="media-left ">
+              <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+                <img class="media-object foldingImage animated fadeInLeftShort " id="media-object-design" src="images/bikefold1.jpg" alt="...">  
+              </div>
+            </div>
+          </div> <!-- class="col-lg-7" -->
+
+          <div class="col-lg-3 col-sm-offset-1">
+            <div class="media-body">
+              <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+                <h2 class="media-heading animated fadeInRight  data-id='1'">Features</h2>
+                <p class="first-para animated fadeInRightShort data-id='2'">Fold it into half and carry it along even inside a subway or a shopping mall.It can turn from a cool city bike into design trasportation for longer trips with just a little twist.Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div> <!-- class="col-lg-3" -->
+
+          </div> <!-- class="media" -->
+
+      </div> <!-- row --> 
+    </div> <!-- class="content container" -->
+  </div> <!-- class="page" id="bikeFold" -->
+
+
+<!-- Features 3 column -->
+    <div class="page" id="otherFeatures">
+      <div class="content container">
+        <h2>Other Features</h2>
+      <hr> 
+      <div class="row ">
+        
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+            <img class="feature-image animated fadeInUpShort data-id='1'" src="images/21gears.jpg">
+            <h2 class = "animated fadeInDownShort data-id='2' ">upto 21 gears</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+          <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+            <img class="feature-image animated fadeInUpShort data-id='1' delay-250" src="images/ultraLightBody.jpg">
+             <h2 class = "animated fadeInDownShort data-id='2' delay-250">Ultra-Ligt Body</h2>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+           <div class="animatedParent data-sequence='5000' data-appear-top-offset='-100000'">
+            <img class="feature-image animated fadeInUpShort data-id='1' delay-500" src="images/grip.jpg">
+            <h2 class = "animated fadeInDownShort data-id='2' delay-500">Excellent Grip</h2>
+          </div>
+        </div>
+
+      </div> <!-- row --> 
+      </div> <!-- class="content container" -->
+  </div> <!-- class="page" id="otherFeatures" -->
+
+
+<!-- customizeBike -->
+<div class="page" id="customizeBike" ng-controller="customizeBikeController">
+    <div class="content container ">
+      <div class="animatedParent">
+      <h2 class="animated growIn">Customize Your Bike</h2>
+      </div>
+      <hr>
+        <div class="row">
+          <div class="animatedParent animateOnce">
+          <p style="text-align:center">Customize the bike to your likes.Let yourself be in <em>Control</em></p>
+          </div>
+          <div class="media media-history">
+            <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
+            <div class="media-left">
+              
+                <img class="media-object media-object-customize" src="images/products/product2.jpg"  alt="...">
+
+            </div>
+          </div> <!-- class="col-lg-6" -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="media-body form">
+
+              <!-- <h2 class="media-heading">Our Journey</h2> -->
+
+
+              <form class="form-inline ">
+                <div class="formInputs">
+                  <div class="form-group customizeOptions">
+                    <label for="gear">Gear</label>
+                    <select class="form-control dropdown" ng-change = "calculation()" ng-model = "gear_current" ng-options="o as o for o in gear_options">
+                    </select>
+                    <p>{{gear_calculation}} <i class="fa fa-euro fa"></i></p>
+                  </div>
+
+                  <div class="form-group customizeOptions">
+                    <label for="Frame">Frame</label>
+                    <select class="form-control dropdown" ng-change = "calculation()"  ng-model = "frame_current" ng-options="f as f for f in frame_options" >
+                    </select>
+                    <p>{{frame_calculation}} <i class="fa fa-euro fa"></i></p>
+                  </div>
+
+                  </div>
+
+                  <div class="formInputs">
+                  <div class="form-group customizeOptions">
+                    <label for="Tyre">Tyre </label>
+                    <select class="form-control dropdown" ng-change = "calculation()"  ng-model = "tyre_current" ng-options="t as t for t in tyre_options">
+                    </select>
+                    <p>{{tyre_calculation}} <i class="fa fa-euro fa"></i></p>
+                  </div>
+
+                  <div class="form-group customizeOptions">
+                    <label for="meter">Meter</label>
+                    <select class="form-control dropdown" ng-change = "calculation()"  ng-model = "meter_current" ng-options="w as w for w in meter_options">
+                    </select>
+                    <p>{{meter_calculation}} <i class="fa fa-euro fa"></i></p>
+                  </div>
+                  </div>
+                </form>
+                <div class="customizeButtonGroup">
+                  <button class="btn btn-danger btn-lg totalPriceButton" style="border-radius:0">Total Price: {{total_calculation}} <i class="fa fa-euro fa"></i></button>
+                  <div class="customizeButton2">
+                    <button class="btn btn-success btn-lg buyButtons"style="border-radius:0" >Buy Now</button>
+                    <button class="addToCart btn btn-warning btn-lg buyButtons " style="border-radius:0" ><i class="fa fa-shopping-cart fa" style="color:white;"></i> Add to Cart</button>   
+                  </div>
+                </div> <!-- customizeButtonGroup -->
+            </div>
+          </div> <!-- class="col-lg-6" -->
+          </div> <!-- class="media" -->
+
+      </div> <!-- row -->
+    </div> <!-- content container -->
+  </div><!-- CustomizeBike -->
+
+
+
+
+<!--  Buy Additional products column -->
+    <div class="page" id="additionalProducts">
+      <div class="content container">
+        <h2>Additional Products</h2>
+      <hr> 
+      <div class="row ">
+        
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 additionalProductsRow2">
+          
+          <div class="image1">
+              <img class="additionalProducts-image " src="images/products/product2.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div> 
+              </div>   
+              </div> <!-- class="image1" -->           
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Frames</h4>
+              <p class = "additionalProducts-paragraph">$399</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div> <!-- class="col-3" -->
+
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 additionalProductsRow2">
+          <div class="image2">
+              <img class="additionalProducts-image " src="images/products/product3.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div> 
+              </div>       
+          </div> <!-- class="image1" -->
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Tyre Frames</h4>
+              <p class = "additionalProducts-paragraph">$249</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2">
+           <div class="image3">
+              <img class="additionalProducts-image " src="images/products/product1.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div>
+              </div> 
+          </div> <!-- class="image1" -->
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Seats</h4>
+              <p class = "additionalProducts-paragraph">$79</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2">
+           <div class="image4">
+              <img class="additionalProducts-image " src="images/products/product5.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div> 
+              </div> 
+          </div> <!-- class="image1" -->
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Smart Locks</h4>
+              <p class = "additionalProducts-paragraph">$139</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+      </div> <!-- row --> 
+      <hr >
+
+      <div class="row ">
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2">
+            <div class="image5">
+              <img class="additionalProducts-image " src="images/products/product6.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div>
+              </div> 
+          </div> <!-- class="image1" -->
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Basic Locks</h4>
+              <p class = "additionalProducts-paragraph">$59</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2">
+          <div class="image6">
+              <img class="additionalProducts-image " src="images/products/product7.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div>
+              </div> 
+          </div> <!-- class="image1" -->
+
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Super-Hero Helmet</h4>
+              <p class = "additionalProducts-paragraph">$119</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2">
+           <div class="image7">
+              <img class="additionalProducts-image " src="images/products/product8.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div>
+              </div> 
+          </div> <!-- class="image1" -->
+
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Helmets</h4>
+              <p class = "additionalProducts-paragraph">$140</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+        <div class="col-lg-3 col-sm-6 col-xs-12 additionalProductsRow2 ">
+           <div class="image8">
+              <img class="additionalProducts-image " src="images/products/product9.jpg">
+              <div class="status">
+                <h3 class="addToCart">Add to Cart</h3>
+                <h3 class="quickView">Quick View</h3>
+                <div class="circle-blue  "></div>
+                <div class="circle-red "></div>
+                <div class="circle-gold "></div>
+                <div class="circle-lightOrange "></div>
+                <div class="circle-grey  "></div>
+              </div>
+          </div> <!-- class="image1" -->
+            <div class="additionalProducts-text">
+              <h4 class = " ">BIke-X Handles</h4>
+              <p class = "additionalProducts-paragraph">$169</p>
+            </div> <!-- class="additionalProducts-text" -->
+        </div>
+
+      </div> <!-- row -->
+
+      </div> <!-- class="content container" -->
+  </div> <!-- class="page" id="otherFeatures" -->
+
+
+<!-- Two Column Footer container -->
+<div class="page footer" id="footer">
+  <div class="content container ">
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 contactInfo">
+      <h3>Contact Info</h3>
+      <p style="margin-bottom:20px">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+      <p><span style="margin-right:10px"><i class="fa fa-map-marker fa-lg"></i></span>123 Sky Tower, Tampere 33710</p>
+      <p><span style="margin-right:10px"><i class="fa fa-phone fa-lg"></i></span>(012) 345 6789</p>
+       <p><span style="margin-right:10px"><i class="fa fa-envelope fa-lg"></i></span>info@bikex.com</p>   
+
+        <form role="form">
+          <div class="form-group form-group-lg "> 
+            <div class="input-group  col-lg-10 col-md-10 col-sm-10 col-xs-10 subscribe">
+                <input type="email"  class="form-control " placeholder="Enter email" id="email">
+                <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button">Subscribe!</button>
+              </span>
+            </div>
+          </div>
+        </form>   
+
+         <div class="socialIcons ">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ><i class="fa fa-facebook fa-lg"></i></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ><i class="fa fa-twitter fa-lg"></i></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ><i class="fa fa-google-plus fa-lg"></i></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ><i class="fa fa-linkedin fa-lg"></i></div>
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" ><i class="fa fa-pinterest fa-lg"></i></div>
+         </div>     
+    </div> <!-- contactInfo -->
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 ">
+      <div class="contactInfo2">
+        <div class="row">
+          <h3>Reviews</h3>
+          <div class="media ">
+            <div class="media-left">
+                <img class="media-object img-circle reviewImage" style=""  src="images/review1.png">  
+            </div>
+            <div class="media-body">
+              <!-- <h3 class="media-heading">Reviews</h3> -->
+              <blockquote class="blockquoteClass "style="">
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                 <cite title="Source Title">Lauren Kathy</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="howToBuy">
+          <div class="col-lg-4 col-md-4 col-sm-5 ">
+            <h3>How To Buy</h3>
+            <ul class="list-unstyled">
+              <a href=""><li style="text-decoration:none">Contact Us</li></a>
+              <a href=""><li>Returns</li></a>
+              <a href=""><li>SiteMap</li></a>
+              <a href=""><li>Brands</li></a>
+              <a href=""><li>Gift Vouchers</li></a>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5  myAccount">
+            <h3>My Account</h3>
+            <ul class="list-unstyled">
+              <a href=""><li>My Account</li></a>
+              <a href=""><li>Order History</li></a>
+              <a href=""><li>Wisht List</li></a>
+              <a href=""><li>Newsletter</li></a>
+              <a href=""><li>Specials</li></a>
+            </ul>  
+          </div>
+          <div class="col-lg-4 col-md-4   information">
+            <h3>Information</h3>
+            <ul class="list-unstyled">
+              <a href=""><li>About Us</li></a>
+              <a href=""><li>Returns</li></a>
+              <a href=""><li>Contact Us</li></a>
+              <a href=""><li>Term & Condtions</li></a>
+              <a href=""><li>Privacy Policy</li></a>
+            </ul>
+          </div>
+          </div> 
+        </div> <!-- row -->
+      </div> <!-- contactInfo2 -->
+    </div>
+  </div>
+</div> <!-- container -->
+</div> <!-- footer -->
+
+  
+  
+  
+</div> <!-- main -->
+
+<footer class="content container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>All contents &copy; 2015 <a href="#">Mysite</a>. All rights reserved.</p>
+    </div> <!-- col-sm-6 -->
+
+    <div class="col-sm-6">
+      <nav class="nav navbar-default ">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </nav>
+    </div> <!-- col-sm-6 -->
+  </div> <!-- row -->
+  
+</footer>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="js/angular.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/countDown.js"></script>
+<script src="js/bigtext.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/customizeBike.js"></script>
+<script src="js/productColorAnimation.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/css3-animate-it.js"></script>
+</body>
+</html>
